@@ -27,23 +27,34 @@ Puppet study guide for puppet professional certification exam
    - [Puppet orchestrator](content/Administration/puppet_architecture.md)
    - [Running puppet on demand](content/Administration/puppet_architecture.md)
    - [Task from command line](content/Administration/puppet_architecture.md)
-3. Environments:
+1. Environments:
   - [Environments & Control repo](content/Administration/puppet_architecture.md)
   - [Environments & Puppetfile](content/Administration/puppet_architecture.md)
   - [Code Manager](content/Administration/puppet_architecture.md)
+1. Puppet language:
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+  - 
 
-5. Puppet language:
+7. PuppetDB:
 
-6. PuppetDB:
+9. Facts:
 
-7. Custom functions:
+10. Hiera:
 
-8. Facts:
+11. Designing system configurations:
 
-9. Hiera:
+12. Puppet internals
 
-10. Designing system configurations:
-
-11. Puppet internals
-
-12. Troubleshooting
+13. Troubleshooting
