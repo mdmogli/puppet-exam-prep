@@ -45,16 +45,15 @@ Puppet study guide for puppet professional certification exam
   - [Environments & Control repo](content/Administration/puppet_architecture.md)
   - [Environments & Control repo](content/Administration/puppet_architecture.md)
   - [Environments & Control repo](content/Administration/puppet_architecture.md)
-  - 
-
-7. PuppetDB:
-
-9. Facts:
-
-10. Hiera:
-
-11. Designing system configurations:
-
-12. Puppet internals
-
-13. Troubleshooting
+1. PuppetDB:
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+1. Facts:
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+1.  Hiera:
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+1.  Designing system configurations:
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+1.  Puppet internals
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
+1.  Troubleshooting
+  - [Environments & Control repo](content/Administration/puppet_architecture.md)
