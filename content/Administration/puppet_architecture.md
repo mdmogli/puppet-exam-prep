@@ -1,5 +1,7 @@
 # Puppet Architecture
 
+[INDEX](../../README.md)
+
 ## Primary server and compilers:
 
 - Puppet server (runs on primary & compilers): host endpoints for the certificate authority service and powers the catalog compiler.

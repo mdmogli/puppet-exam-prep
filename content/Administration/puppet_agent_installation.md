@@ -1,5 +1,7 @@
 # Puppet agent installation
 
+[INDEX](../../README.md)
+
 ## Add installation class to PE Master:
 1. This step is **optional**: in order to get the installation steps for your agent node, if the node architecture and/or OS operating differs from the PE mastes it is neccesary to add a new class to the puppet enterprise:
     - Add Archictecture (Ubuntu, Redhat, etc) to PE master classification (Optional):

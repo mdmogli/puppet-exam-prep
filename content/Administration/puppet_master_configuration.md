@@ -1,5 +1,7 @@
 # Puppet agent configuration
 
+[INDEX](../../README.md)
+
 ## Important Configuration path
 1. Main directory: /etc/puppetlabs
 1. Puppet components config directory: /etc/puppetlabs/COMPONENT/conf.d
