@@ -12,7 +12,7 @@
 
 ### modules and plugnis:
 1. default installation modules: /opt/puppetlabs/puppet/modules
-1. non-default: /etc/puppetlabs/code/environments/<environment>/modules
+1. non-default: /etc/puppetlabs/code/environments/environment_name/modules
 
 ### Configuration files:
 1. Unix: /etc/puppetlabs/puppet
