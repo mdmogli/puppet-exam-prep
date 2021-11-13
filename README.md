@@ -18,22 +18,21 @@ Puppet study guide for puppet professional certification exam
    - [Backups and restore](content/Administration/backups_restore.md)
    - [Client tools Token based auth](content/Administration/token_auth.md)
 2. Classification:
-   - [Managing Nodes](content/Administration/puppet_architecture.md)
-   - [Grouping and classifying nodes](content/Administration/puppet_architecture.md)
-   - [Environment-based testing](content/Administration/puppet_architecture.md)
-   - [Preconfigured node groups](content/Administration/puppet_architecture.md)
-3. Orchestration:
-   - [Bolt](content/Administration/puppet_architecture.md)
-   - [Tasks](content/Administration/puppet_architecture.md)
-   - [Writing Tasks](content/Administration/puppet_architecture.md)
-   - [Running plans](content/Administration/puppet_architecture.md)
-   - [Puppet orchestrator](content/Administration/puppet_architecture.md)
-   - [Running puppet on demand](content/Administration/puppet_architecture.md)
-   - [Task from command line](content/Administration/puppet_architecture.md)
-4. Environments:
-   - [Environments & Control repo](content/Administration/puppet_architecture.md)
-   - [Environments & Puppetfile](content/Administration/puppet_architecture.md)
-   - [Code Manager](content/Administration/puppet_architecture.md)
+   - [Managing Nodes](content/Classification/managing_nodes.md)
+   - [Grouping and classifying nodes](content/Classification/node_groups.md)
+   - [Preconfigured node groups](content/Classification/preconfigured_node_groups.md)
+3. Environments:
+   - [Environments & Control repo](content/Environments/control_repo.md)
+   - [Environments & Puppetfile](content/Environments/puppetfile.md)
+   - [Code Manager](content/Environments/puppet_architecture.md)
+4. Orchestration:
+   - [Bolt](content/Orchestration/bolt.md)
+   - [Tasks](content/Orchestration/tasks.md)
+   - [Writing Tasks](content/Orchestration/writing_tasks.md)
+   - [Running plans](content/Orchestration/plans.md)
+   - [Puppet orchestrator](content/Orchestration/puppet_orchestrator.md)
+   - [Running puppet on demand](content/Orchestration/puppet_ondemand.md)
+   - [Task from command line](content/Orchestration/task_from_cli.md)
 5. Puppet language:
    - [Conditionals & expressions](content/Language/puppet_architecture.md)
    - [Containment](content/Language/puppet_architecture.md)
