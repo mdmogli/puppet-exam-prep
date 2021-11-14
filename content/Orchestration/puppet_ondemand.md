@@ -1,15 +1,35 @@
-# Puppet Orchestator
+# Run Puppet On demand
 
 [INDEX](../../README.md)
 
 ## Overview:
-You can run Puppet, tasks, or plans on-demand. In order to use this featur PE infra is needed.
+Use the puppet task run command to run tasks on agent nodes. In order to use this featur PE infra is needed.
 
-The orchestrator uses pe-orchestration-services to execute on-demand Puppet runs on agent nodes in your infrastructure. The orchestrator uses PXP agents to orchestrate changes across your infrastructure.
+You can use the following options:
+* --noop: dry run
+* --environment, -e: defines the env
+* --params: json object or json file (using @file.json) with params 
+* --description: description for the job.
 
-The orchestrator controls the functionality for the puppet job, puppet task, and puppet plan commands and also the functionality for jobs and runs on console services.
+### Examples:
 
-### Puppet orchestartor architecture
+```bash
+
+    # run a job on a list of nodes and node file
+    $ puppet task run service action=status service=nginx --nodes host1,host2,host3
+    $ puppet task run service action=status service=nginx --nodes @/path/to/file.txt
+
+    # using PQL
+    $ puppet task run service action=status service=nginx --query 'nodes { certname ~ "web" }'
+
+    # Using node group
+    $ puppet task run <TASK NAME> --node-group <node-group-id>
+
+    # using json params and json file
+    $ puppet task run my_task --params '{ "action":"status", "service":"my_service", "timeout":8 }' --nodes host1,host2,host3
+    $ puppet task run my_task --params @/path/to/file.json --nodes host1,host2,host3
+
+```
 
 1. PXP: A message format used to request that a task be executed on a remote host and receive responses on the status of that task.
 2. PXP agent: Service in the agent that runs PXP.

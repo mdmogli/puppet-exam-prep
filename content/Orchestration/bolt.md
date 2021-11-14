@@ -3,7 +3,7 @@
 [INDEX](../../README.md)
 
 ## Overview:
-opensource orchestation tool that allows us to run ad-hoc commands, tasks and plans. Bolt use SSH as a default transport mech. In order to run bolt without user/pass, ssh pubkey is needed, bolt will use the key stored in ~/.ssh/.
+opensource orchestation tool that allows us to run ad-hoc commands, tasks and plans. Bolt use SSH as a default transport mech. In order to run bolt without user/pass, ssh pubkey is needed, bolt will use the key stored in ~/.ssh/. No PE infra is needed.
 
 Main configuration file: ~/puppetlabs/bolt/bolt.yaml
 

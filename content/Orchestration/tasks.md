@@ -29,4 +29,7 @@ In order for Bolt to find a task, the task must be in a module on the modulepath
 
     # run with sudo, will prompt for sudo password
     $ bolt task run apache::ctl command=restart --run-as root --sudo-password --nodes servers
+
+    # Run tasks using PQL
+    $ bolt task run service action=status service=nginx --query 'nodes { certname ~ "web" }'
 ```

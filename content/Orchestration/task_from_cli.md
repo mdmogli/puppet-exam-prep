@@ -1,15 +1,43 @@
-# Puppet Orchestator
+# Running Tasks from CLI
 
 [INDEX](../../README.md)
 
 ## Overview:
-You can run Puppet, tasks, or plans on-demand. In order to use this featur PE infra is needed.
+Puppet runs every 30min by default, Use the puppet job run command to enforce change on your agent nodes. In order to use this featur PE infra is needed.
 
-The orchestrator uses pe-orchestration-services to execute on-demand Puppet runs on agent nodes in your infrastructure. The orchestrator uses PXP agents to orchestrate changes across your infrastructure.
+You can run jobs on three types of targets, but these targets cannot be combined:
 
-The orchestrator controls the functionality for the puppet job, puppet task, and puppet plan commands and also the functionality for jobs and runs on console services.
+- A list of nodes or a single node
+- A node group
+- A PQL nodes query
 
-### Puppet orchestartor architecture
+When you execute a puppet job run command and compiles a new catalog for all nodes included in the job.
+
+You can use the following options:
+* --noop: dry run
+* --no-nopp: overrides any noop in the agent
+* --environment, -e: defines the env
+* --no-enforce-environment: ignore env for agent.
+* --description: description for the job.
+* --concurrency: default unlimited.
+
+### Examples:
+
+```bash
+
+    # run a job on a list of nodes
+    $ puppet job run --nodes node1,node2 <options>
+
+    # using a list
+    $ puppet job run --nodes @/path/to/file.txt <options>
+
+    # using PQL
+    $ puppet job run --query 'nodes { certname = "mynode" }' <options>
+
+    # usign a node group
+    $ puppet job run --node-group <node-group-id> <options>
+
+```
 
 1. PXP: A message format used to request that a task be executed on a remote host and receive responses on the status of that task.
 2. PXP agent: Service in the agent that runs PXP.
