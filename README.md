@@ -7,7 +7,10 @@ Puppet study guide for puppet professional certification exam
 1. Concepts:
    - [Idempotency](content/Concepts/idempotency.md)
    - [Resource abstraction layer](content/Concepts/ral.md)
-2. Administration: 
+1. Puppet internals:
+   - [Agent-server HTTPS communications](content/Administration/puppet_architecture.md)
+   - [Catalog compilation](content/Administration/puppet_architecture.md)
+1. Administration: 
    - [Puppet Architecture](content/Administration/puppet_architecture.md)
    - [Main ports used](content/Administration/puppet_main_ports.md)
    - [PE installation](content/Administration/pe_installation.md)
@@ -20,15 +23,15 @@ Puppet study guide for puppet professional certification exam
    - [Analyzing puppet runs](content/Administration/analyzing_puppet_runs.md)
    - [Backups and restore](content/Administration/backups_restore.md)
    - [Client tools Token based auth](content/Administration/token_auth.md)
-3. Classification:
+1. Classification:
    - [Managing Nodes](content/Classification/managing_nodes.md)
    - [Grouping and classifying nodes](content/Classification/node_groups.md)
    - [Preconfigured node groups](content/Classification/preconfigured_node_groups.md)
-4. Environments:
+1. Environments:
    - [Environments & Control repo](content/Environments/control_repo.md)
    - [Environments & Puppetfile](content/Environments/puppetfile.md)
    - [Code Manager](content/Environments/puppet_architecture.md)
-5. Orchestration:
+1. Orchestration:
    - [Bolt](content/Orchestration/bolt.md)
    - [Tasks](content/Orchestration/tasks.md)
    - [Writing Tasks](content/Orchestration/writing_tasks.md)
@@ -36,7 +39,7 @@ Puppet study guide for puppet professional certification exam
    - [Puppet orchestrator](content/Orchestration/puppet_orchestrator.md)
    - [Running puppet on demand](content/Orchestration/puppet_ondemand.md)
    - [Task from command line](content/Orchestration/task_from_cli.md)
-6. Puppet language:
+1. Puppet language:
    - [Conditionals & expressions](content/Language/puppet_architecture.md)
    - [Containment](content/Language/containment.md)
    - [Templating](content/Language/templating.md)
@@ -52,29 +55,30 @@ Puppet study guide for puppet professional certification exam
    - [Values, data types, and aliases](content/Language/data_types.md)
    - [Variables](content/Language/variables.md)
    - [Variable scope](content/Language/variables_scope.md)
-7. PuppetDB:
-   - [Overview & Config](content/PuppetDB/puppet_architecture.md)
+1. PuppetDB:
+   - [Overview & Config](content/PuppetDB/overview.md)
    - [PQL](content/PuppetDB/puppet_architecture.md)
-   - [Events endpoints](content/PuppetDB/puppet_architecture.md)
-   - [Troubleshooting](content/PuppetDB/puppet_architecture.md)
-8. Custom functions:  
-   - [Environments & Control repo](content/Administration/puppet_architecture.md)
-9.  Facts:
-   - [Environments & Control repo](content/Administration/puppet_architecture.md)
-   - [Built-in facts](content/Administration/puppet_architecture.md)
-   - [Custom facts](content/Administration/puppet_architecture.md)
-11. Hiera:
+1. Custom functions:  
+   - [overview](content/CustomFunctions/overview.md)
+1. Facts:
+   - [overview](content/Facts/overview.md)
+   - [Built-in Core facts](content/Facts/core_facts.md)
+   - [Custom facts](content/Facts/custom_facts.md)
+   - [External facts](content/Facts/external_facts.md)
+   - [Built-in variables](content/Facts/builtin_variables.md)
+1. Hiera:
    - [Overview, config & using hiera](content/Administration/puppet_architecture.md)
    - [Writing new data backends](content/Administration/puppet_architecture.md)
-12. Roles & Profiles:
+1. Roles & Profiles:
    - [Overview & examples](content/Administration/puppet_architecture.md)
-11. Puppet Commands:
+1. Module Authoring & unit testing:
+   - [Using PDK](content/Modules/pdk.md)
+   - [Unit testing: rspec](content/Modules/rspec.md)
+1. Puppet Commands:
    - [puppet lookup](content/Administration/puppet_architecture.md)
    - [puppet module](content/Administration/puppet_architecture.md)
    - [puppet parser](content/Administration/puppet_architecture.md)
    - [puppet resource](content/Administration/puppet_architecture.md)
-12. Puppet internals:
-   - [Agent-server HTTPS communications](content/Administration/puppet_architecture.md)
-   - [Catalog compilation](content/Administration/puppet_architecture.md)
-13. Troubleshooting:
-   - [runbooks](content/Administration/puppet_architecture.md)
+   - [puppet apply](content/Administration/puppet_architecture.md)
+1. Troubleshooting:
+   - [runbooks](content/Troubleshooting/runbooks.md)
