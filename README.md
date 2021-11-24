@@ -67,11 +67,11 @@ Puppet study guide for puppet professional certification exam
    - [External facts](content/Facts/external_facts.md)
    - [Built-in variables](content/Facts/builtin_variables.md)
 1. Hiera:
-   - [Overview, config & using hiera](content/Administration/puppet_architecture.md)
-   - [Writing new data backends](content/Administration/puppet_architecture.md)
+   - [Overview, config & using hiera](content/Hiera/puppet_architecture.md)
+   - [Writing new data backends](content/Hiera/puppet_architecture.md)
 1. Roles & Profiles:
-   - [Overview & examples](content/Administration/puppet_architecture.md)
-1. Module Authoring & unit testing:
+   - [Overview & examples](content/RolesProfiles/puppet_architecture.md)
+1. pdk & unit testing:
    - [Using PDK](content/Modules/pdk.md)
    - [Unit testing: rspec](content/Modules/rspec.md)
 1. Puppet Commands:
