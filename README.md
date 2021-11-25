@@ -57,7 +57,7 @@ Puppet study guide for puppet professional certification exam
    - [Variable scope](content/Language/variables_scope.md)
 1. PuppetDB:
    - [Overview & Config](content/PuppetDB/overview.md)
-   - [PQL](content/PuppetDB/puppet_architecture.md)
+   - [PQL](content/PuppetDB/pql.md)
 1. Custom functions:  
    - [overview](content/CustomFunctions/overview.md)
 1. Facts:
