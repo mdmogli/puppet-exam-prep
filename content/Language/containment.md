@@ -8,7 +8,7 @@
 3. contain
 
 ## include
-Use include when you don't need to enforce anything in your current class. Sets no ordering. Use include as default option.
+Use include when you don't need to enforce anything in your current class. Sets no ordering. Use include as default option. Nowadays puppet runs in the order that you define the includes and resources within the class.
 
 ```python
     class myapp {
@@ -36,7 +36,7 @@ When resources from another class should be enforced before use require, sets or
 ```
 
 ## contain
-Similar behavior that include but a relationship is needed. See example.
+Similar behavior that include but a relationship is needed to run using the Class declaration. See example.
 
 ### example
 ```python
