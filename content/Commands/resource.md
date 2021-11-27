@@ -19,4 +19,14 @@ user { 'luke':
  shell => '/bin/bash',
  groups => ['sysadmin','audio','video','puppet']
 }
+
+# Create a user using puppet resource user
+$ puppet resource user luke ensure=present
+Notice: /User[luke]/ensure: created
+user { 'luke':
+    ensure => 'present',
+}
+
+# List all resources
+$  puppet describe --list
 ```

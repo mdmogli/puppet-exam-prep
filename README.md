@@ -74,11 +74,14 @@ Puppet study guide for puppet professional certification exam
    - [Using PDK](content/Module/pdk.md)
    - [Unit testing: rspec](content/Module/rspec.md)
 1. Puppet Commands:
+   - [puppet agent](content/Commands/agent.md)
    - [puppet lookup](content/Commands/lookup.md)
    - [puppet module](content/Commands/module.md)
    - [puppet parser](content/Commands/parser.md)
    - [puppet resource](content/Commands/resource.md)
    - [puppet apply](content/Commands/apply.md)
+   - [puppet ssl](content/Commands/ssl.md)
+   - [puppetserver ca](content/Commands/cert.md)
 1. Troubleshooting:
    - [Installation](content/Troubleshooting/installation.md)
    - [Communication](content/Troubleshooting/communication.md)
