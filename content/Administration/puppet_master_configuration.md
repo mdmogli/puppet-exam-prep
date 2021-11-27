@@ -1,4 +1,4 @@
-# Puppet agent configuration
+# Puppet Master configuration
 
 [INDEX](../../README.md)
 
