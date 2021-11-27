@@ -20,6 +20,7 @@ $ puppet-code deploy --dry-run
 ### check syntax of puppet file:
 
 ```bash
+# Run in the same folder of Puppetfile exist
 $ r10k puppetfile check
 Syntax OK
 ```
