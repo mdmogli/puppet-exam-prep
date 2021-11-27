@@ -71,8 +71,8 @@ Puppet study guide for puppet professional certification exam
 1. Roles & Profiles:
    - [Overview & examples](content/RolesProfiles/overview.md)
 1. pdk & unit testing:
-   - [Using PDK](content/Modules/pdk.md)
-   - [Unit testing: rspec](content/Modules/rspec.md)
+   - [Using PDK](content/Module/pdk.md)
+   - [Unit testing: rspec](content/Module/rspec.md)
 1. Puppet Commands:
    - [puppet lookup](content/Commands/lookup.md)
    - [puppet module](content/Commands/module.md)
