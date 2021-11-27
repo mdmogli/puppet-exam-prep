@@ -9,7 +9,7 @@ Location of these scripts:
 1. /opt/puppetlabs/facter/facts.d/
 2. /etc/puppetlabs/facter/facts.d/
 3. /etc/facter/facts.d/
-4. <MODULEPATH>/<MODULE>/facts.d/
+4. MODULEPATH/MODULE/facts.d/
 
 ## Examples:
 
