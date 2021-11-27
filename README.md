@@ -81,7 +81,7 @@ Puppet study guide for puppet professional certification exam
    - [puppet resource](content/Commands/resource.md)
    - [puppet apply](content/Commands/apply.md)
    - [puppet ssl](content/Commands/ssl.md)
-   - [puppetserver ca](content/Commands/cert.md)
+   - [puppetserver ca](content/Commands/ca.md)
 1. Troubleshooting:
    - [Installation](content/Troubleshooting/installation.md)
    - [Communication](content/Troubleshooting/communication.md)
