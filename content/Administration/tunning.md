@@ -21,8 +21,6 @@ Some examples are:
 - puppet_enterprise::master::puppetserver::jruby_max_active_instances
 - puppet_enterprise::master::puppetserver::jruby_max_requests_per_instance
  
-
-
 ### Executable binaries and symlinks
 1. Binaries: /opt/puppetlabs/bin and /opt/puppetlabs/sbin
 1. symlinks: /usr/local/bin

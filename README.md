@@ -8,8 +8,8 @@ Puppet study guide for puppet professional certification exam
    - [Idempotency](content/Concepts/idempotency.md)
    - [Resource abstraction layer](content/Concepts/ral.md)
 1. Puppet internals:
-   - [Agent-server HTTPS communications](content/Administration/puppet_architecture.md)
-   - [Catalog compilation](content/Administration/puppet_architecture.md)
+   - [Agent-server HTTPS communications](content/Internals/https_comm.md)
+   - [Catalog compilation](content/Internals/catalog_compilation.md)
 1. Administration: 
    - [Puppet Architecture](content/Administration/puppet_architecture.md)
    - [Main ports used](content/Administration/puppet_main_ports.md)
@@ -74,10 +74,10 @@ Puppet study guide for puppet professional certification exam
    - [Using PDK](content/Modules/pdk.md)
    - [Unit testing: rspec](content/Modules/rspec.md)
 1. Puppet Commands:
-   - [puppet lookup](content/Administration/puppet_architecture.md)
-   - [puppet module](content/Administration/puppet_architecture.md)
-   - [puppet parser](content/Administration/puppet_architecture.md)
-   - [puppet resource](content/Administration/puppet_architecture.md)
-   - [puppet apply](content/Administration/puppet_architecture.md)
+   - [puppet lookup](content/Commands/lookup.md)
+   - [puppet module](content/Commands/module.md)
+   - [puppet parser](content/Commands/parser.md)
+   - [puppet resource](content/Commands/resource.md)
+   - [puppet apply](content/Commands/apply.md)
 1. Troubleshooting:
    - [runbooks](content/Troubleshooting/runbooks.md)
