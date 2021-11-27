@@ -14,11 +14,11 @@ $ sudo puppetserver ca sign --certname <NAME>
 
 ## Remove agent nodes & recover a license (purge):
 1. On agents: service puppet stop
-1. On MoM: puppet node purge <CERTNAME>
+1. On MoM: puppet node purge CERTNAME
 1. if you have compilers: puppet agent -t
 
 ## Clean cert but mantain the licence:
 1. On agents: service puppet stop
-1. On MoM: puppetserver ca clean --certname <AGENT CERT NAME>
-1. if you have compilers: puppet agent -t
+2. On MoM: puppetserver ca clean --certname CERTNAME
+3. if you have compilers: puppet agent -t
    

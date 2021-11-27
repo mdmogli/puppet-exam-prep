@@ -30,7 +30,7 @@ Puppet study guide for puppet professional certification exam
 1. Environments:
    - [Environments & Control repo](content/Environments/control_repo.md)
    - [Environments & Puppetfile](content/Environments/puppetfile.md)
-   - [Code Manager](content/Environments/puppet_architecture.md)
+   - [Code Manager](content/Environments/code_manager.md)
 1. Orchestration:
    - [Bolt](content/Orchestration/bolt.md)
    - [Tasks](content/Orchestration/tasks.md)
