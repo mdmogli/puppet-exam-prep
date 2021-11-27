@@ -1,9 +1,9 @@
-# Custom overview
+# Custom Functions
 
 [INDEX](../../README.md)
 
 ## Overview:
-Puppet includes many built-in functions, such as md5, each, downcase, etc. They run on server side and the purpose is to returns a value or extend functionality (earch function case). 
+Puppet includes many built-in functions, such as md5, each, downcase, etc. They run on server side and the purpose is to returns a value or extend functionality (each function case). 
 
 Can be writen using:
 - The Puppet language: better if you don't have ruby laguange skills.
