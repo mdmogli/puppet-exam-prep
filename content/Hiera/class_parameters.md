@@ -48,4 +48,4 @@ class ntp (
 }
 ```
 
-Puppet will lookup the variables using the namespace that module has, in this case will try to solve usign the main hiera module file and search for ntp::autoupdate and ntp::service_name variables using the behavior Global (1) -> Environment (2) -> Module (3).
+Puppet will lookup the variables using the namespace that module has, in this case will try to solve usign the main hiera module file and search for ntp::autoupdate and ntp::service_name variables using the layers lookup behavior: Global (1) -> Environment (2) -> Module (3).
