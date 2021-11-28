@@ -13,7 +13,7 @@ Puppet plugin for Hiera to encrypt values using keys. Can encrypts plain text st
 $ eyaml createkeys
 $ mv keys/* /etc/puppetlabs/puppet/eyaml/
 
-# Set permissions according your isnstallation
+# Set permissions according your installation
 ```
 
 1. To use the command with this keys, a default config file is needed: 
