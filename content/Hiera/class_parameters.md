@@ -35,7 +35,7 @@ class ntp (
 }
 ```
 
-### hiera pattern
+### Hiera pattern
 In this case, we use hiera to grab the values of the variables without using a class. Puppet can grab these values using the automatic lookup in class paramenters definitions:
 
 ```python
