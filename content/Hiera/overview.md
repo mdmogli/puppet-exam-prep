@@ -52,7 +52,7 @@ hierarchy:
 
 ## Using hiera within your puppet code
 
-You can combine these arguments in the following ways:
+The lookup function:
 - lookup( NAME, [VALUE TYPE], [MERGE BEHAVIOR], [DEFAULT VALUE] )
 - lookup( [NAME], OPTIONS HASH )
 - lookup( as above ) |$key| { VALUE } # lambda returns a default value
