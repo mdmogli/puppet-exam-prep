@@ -7,7 +7,7 @@ Puppet uses Hiera to do two things:
 1. Store the configuration data in key-value pairs
 2. Look up what data a particular module needs for a given node during catalog compilation
 
-Puppet 5 comes with support for JSON, YAML, and EYAML files.
+Puppet 5 and above comes with support for JSON, YAML, and EYAML files.
 
 ## Hiera hierarchy using static and dynamic pattern (facts):
 
