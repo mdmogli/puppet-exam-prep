@@ -32,6 +32,14 @@ matches anything except undef.
 
 ### Arrays:
 ```python
+# Generic array witn String elements
+Array[String]
+
+# Generic Array with any type of elements and 5 minimun objects
+Array[Any, 5]
+
+# Generic Array with any type of elements between 5 and 10 objects
+Array[Any, 5]
 # Examples
 [ 'one', 'two', 'three' ]
 # Equivalent:

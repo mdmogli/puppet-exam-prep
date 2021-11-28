@@ -17,9 +17,16 @@
     } else {
         include ntp
     }
+
+    # Example validating a value
+    if $hostname =~ String[10] {} -> return true or false
+
+    if $port =~ Integer {}
+    
+
 ```
 
-### unless statement
+### unless statement (if not)
 ```python
     unless $facts['memory']['system']['totalbytes'] > 1073741824 {
         $maxclient = 500

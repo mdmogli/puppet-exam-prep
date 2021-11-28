@@ -35,6 +35,24 @@ This resource is applied before the notified resources. If Puppet makes changes 
 ### require:
 The required resources are applied before this resource.
 
+```python
+# Using an array of Packages resources
+file { '/etc/ssh/sshd_config':
+  ensure  => file,
+  owner   => root,
+  group   => root,
+  require => Package['httpd', 'example1'],
+}
+
+# Using an Array of mix resources
+file { '/etc/ssh/sshd_config':
+  ensure  => file,
+  owner   => root,
+  group   => root,
+  require => [ Package['httpd'], Service['crond'] ],
+ }
+```
+
 ### schedule:
 Govern when Puppet is allowed to manage this resource. 
 

@@ -3,7 +3,7 @@
 [INDEX](../../README.md)
 
 ## Overview:
-Puppet runs every 30min by default, Use the puppet job run command to enforce change on your agent nodes. In order to use this featur PE infra is needed.
+Puppet runs every 30min by default, Use the **puppet job run** command to enforce change on your agent nodes. In order to use this featur PE infra is needed.
 
 You can run jobs on three types of targets, but these targets cannot be combined:
 
@@ -13,7 +13,7 @@ You can run jobs on three types of targets, but these targets cannot be combined
 
 When you execute a puppet job run command and compiles a new catalog for all nodes included in the job.
 
-You can use the following options:
+You can use the following **options**:
 * --noop: dry run
 * --no-nopp: overrides any noop in the agent
 * --environment, -e: defines the env

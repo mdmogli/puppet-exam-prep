@@ -9,13 +9,13 @@ Puppet uses Hiera to do two things:
 
 Puppet 5 comes with support for JSON, YAML, and EYAML files.
 
-## Hiera hierarchy:
+## Hiera hierarchy using static and dynamic pattern (facts):
 
 ```yaml
 ---
 version: 5
 defaults:  # Used for any hierarchy level that omits these keys.
-  datadir: data         # This path is relative to hiera.yaml's directory.
+  datadir: data         # This path is relative to hiera.yaml's directory. Ex: ./data dir location.
   data_hash: yaml_data  # Use the built-in YAML backend.
 
 hierarchy:
@@ -29,6 +29,7 @@ hierarchy:
   - name: "Global business group data"
     path: "groups/%{facts.group}.yaml"
 
+  # Using eyaml for encrypted data
   - name: "Per-datacenter secret data (encrypted)"
     lookup_key: eyaml_lookup_key   # Uses non-default backend.
     path: "secrets/%{facts.whereami}.eyaml"
@@ -38,39 +39,18 @@ hierarchy:
 
   - name: "Per-OS defaults"
     path: "os/%{facts.os.family}.yaml"
+  
+  # Using several paths with "paths" option
+  - name: "Per-OS defaults"
+    paths: 
+      - mix/file1.yaml
+      - mix/file1.yaml
 
   - name: "Common data"
     path: "common.yaml"
 ```
 
-## Layered hierarchies 
-Hiera uses layers of data with a hiera.yaml for each layer. A lookup works as following:
-
-- global → environment → module.
-
-### 1- Global layer:
-is located, by default, in: $confdir/hiera.yaml
-
-### 2- Environment layer:
-is located, by default, in ENVIRONMENT DIR/hiera.yaml
-
-### 3- Module layer:
-is located, by default, in MODULE/hiera.yaml.
-
-## Merge behaviors:
-There are four merge behaviors to choose from: first, unique, hash, and deep.
-
-### First:
-A first-found lookup doesn’t merge anything: it returns the first value found for the key, and ignores the rest. This is **Hiera’s default behavior**.
-
-## Looking up data from hiera:
-
-When looking up a key, Hiera searches up to four hierarchy layers of data, in the following order:
-
-1. Global hierarchy.
-1. The current environment's hierarchy.
-1. The indicated module's hierarchy, if the key is of the form MODULE NAME::SOMETHING.
-1. If not found and the module's hierarchy has a default_hierarchy entry in its hiera.yaml — the lookup is repeated if steps 1-3 did not produce a value.
+## Using hiera within your puppet code
 
 You can combine these arguments in the following ways:
 - lookup( NAME, [VALUE TYPE], [MERGE BEHAVIOR], [DEFAULT VALUE] )
@@ -80,12 +60,19 @@ You can combine these arguments in the following ways:
 ### Using the lookup function within puppet code:
 
 ```python
+# Setting a default value if hiera doesn't find the variable
 lookup('some::key', undef, undef, 'the default value')
+
+# setting a variable type and changing merge behavior.
+lookup('some::myarray', Array, unique)
 ```
 
 ```bash
 $ puppet lookup KEY --node NAME --environment ENV --explain
 $ puppet lookup --node agent.local key_name
+
+# Changing the merge behavior (See Merge Behavior section)
+$ puppet lookup --node agent.local key_name --merge unique
 ```
 
 ### Access hash array elements keysubkey notation

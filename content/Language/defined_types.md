@@ -3,7 +3,7 @@
 [INDEX](../../README.md)
 
 ## Overview
-Code that we can use repeatedly with different parameters within our module avoiding the multiple class declaration.
+Code that we can use repeatedly with different parameters within our module avoiding the multiple class declaration. Classes are singleton, you cannot redeclare a class multiple times. Definde types behave like resources.
 
 ## Create a new define type
 ```bash
@@ -11,6 +11,8 @@ Code that we can use repeatedly with different parameters within our module avoi
 ```
 
 ## Example of a define type
+As you can see, is very similar to a class but the definition word change to **define** instead of **class**. 
+
 ```python
 define apache::vhost (
   Integer $port,

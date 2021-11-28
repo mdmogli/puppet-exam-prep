@@ -22,4 +22,7 @@ $ puppet agent -t
 
 # Compare current system with catalog but no apply changes
 $ puppet agent -t --noop
+
+# Connect to an specific server
+$ puppet agent -t --server SERVERNAME
 ```

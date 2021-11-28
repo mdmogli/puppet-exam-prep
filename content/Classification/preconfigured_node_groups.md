@@ -1,4 +1,4 @@
-# Preconfigured node groups
+# Preconfigured node groups in Puppet Enterprise console
 
 [INDEX](../../README.md)
 
