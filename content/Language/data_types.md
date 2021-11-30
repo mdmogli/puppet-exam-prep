@@ -39,7 +39,8 @@ Array[String]
 Array[Any, 5]
 
 # Generic Array with any type of elements between 5 and 10 objects
-Array[Any, 5]
+Array[Any, 5, 10]
+
 # Examples
 [ 'one', 'two', 'three' ]
 # Equivalent:
