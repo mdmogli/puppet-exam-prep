@@ -23,12 +23,6 @@ File['sshdconfig'] {
 ### before: 
 Causes the resource to be applied before the dependent resources. 
 
-### loglevel:
-Sets the level at which information is logged. Values: emerg, alert, crit, err, warning, notice, info, verbose, debug.
-
-### noop:
-"no-op" mode = dry-run
-
 ### notify:
 This resource is applied before the notified resources. If Puppet makes changes to this resource, it causes all of the notified resources to refresh. Refresh behavior varies by resource type: for example, services restart and mounts unmount and re-mount. Not all types can refresh.
 
@@ -53,6 +47,12 @@ file { '/etc/ssh/sshd_config':
  }
 ```
 
+### subscribe:
+The subscribed resources are applied before this resource. If Puppet makes changes to any of the subscribed resources, it causes this resource to refresh.
+
+### loglevel:
+Sets the level at which information is logged. Values: emerg, alert, crit, err, warning, notice, info, verbose, debug.
+
 ### schedule:
 Govern when Puppet is allowed to manage this resource. 
 
@@ -67,8 +67,8 @@ exec { "/usr/bin/apt-get update":
 }
 ```
 
-### subscribe:
-The subscribed resources are applied before this resource. If Puppet makes changes to any of the subscribed resources, it causes this resource to refresh.
+### noop:
+"no-op" mode = dry-run
 
 ### tag:
 Add tags to the associated resource.
