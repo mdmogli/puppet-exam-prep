@@ -24,7 +24,7 @@ Configure nodes by assigning classes, parameters, and variables to them.
 Configure nodes by assigning environments (git branches) to them.
 
 1. Must be a direct child of the All Environments node group
-1. Must not include child groups, except any one-time run exception subgroups used for canary testing
+1. Must not include child groups, except any one-time run exception subgroups used for canary testing (puppet agent -t --environment env_name)
 1. Must be specified as an environment group in the group metadata
 1. Must not include classes or configuration data
 
