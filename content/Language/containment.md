@@ -36,7 +36,7 @@ When resources from another class should be enforced before use require, sets or
 ```
 
 ## contain
-Similar behavior that include but a relationship is needed to run using the Class declaration. See example.
+Similar behavior that include but we ensure that all containing classes run inside the class that is defined. See example.
 
 ### example
 ```python
